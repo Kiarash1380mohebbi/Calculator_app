@@ -3,8 +3,8 @@ from tkinter import *
 
 win = CTk()
 win.title('Calculator')
-win.geometry('308x190')
-win.attributes(topmost=TRUE,alpha=0.95)
+win.geometry('308x190+520+200')
+win.attributes(topmost=TRUE)
 win._set_appearance_mode('light')
 win.resizable(False,False)
 
@@ -65,7 +65,7 @@ btn_8=CTkButton(win,text='8',text_color="#000000",fg_color="#42A8C2",width=75,co
 btn_9=CTkButton(win,text='9',text_color="#000000",fg_color="#42A8C2",width=75,command=lambda:show("9"))
 btn_Multiplication=CTkButton(win,text='x',text_color='#ffffff',fg_color="#FF5100",width=75,command=lambda:show("x"))
 #row 4
-btn_equal=CTkButton(win,text='=',text_color='#ffffff',fg_color="#20C000",width=75,command=calculate)
+btn_equal=CTkButton(win,text='=',text_color='#ffffff',fg_color="#FF5100",width=75,command=calculate)
 btn_0=CTkButton(win,text='0',text_color="#000000",fg_color="#42A8C2",width=75,command=lambda:show("0"))
 btn_Delete=CTkButton(win,text='D',text_color='#ffffff',fg_color="#C00000",width=75,command=clear)
 btn_Division=CTkButton(win,text='%',text_color='#ffffff',fg_color="#FF5100",width=75,command=lambda:show("/"))
